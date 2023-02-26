@@ -1,10 +1,11 @@
 const { parse } = require("csv-parse/sync");
 const fs = require("fs");
+const path = require("path");
 
-const csv = fs.readFileSync("./data/emojis.csv", "utf8");
+const csv = fs.readFileSync(path.join(__dirname, "../data/emojis.csv"), "utf8");
 const records = parse(csv, { columns: true });
 
-const files = fs.readdirSync("./svg");
+const files = fs.readdirSync(path.join(__dirname, "../svg"));
 
 for (const file of files) {
   if (!file.charAt(0).match(/[0-9a-z]/) || !file.endsWith(".svg")) continue;

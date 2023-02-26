@@ -39,7 +39,7 @@ return <TransgenderFlag size={64} />;
 
 ## Special Thanks & Sponsors
 
-- [BlazingWorks](https://blazing.works/) - for funding and maintaining the development of Reggy
+- [BlazingWorks](https://blazing.works/) - for funding and maintaining the development of `react-twemoji-components`
 - [OfficialCRUGG](https://github.com/OfficialCRUGG) - for the idea of `react-twemoji-components`
 - [Twemoji](https://twemoji.twitter.com/) - for the awesome emoji set
 - [DataHub](https://datahub.io/) - for formatting the emoji data into a usable format

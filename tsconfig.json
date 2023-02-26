@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["./**/*.ts", "!./node_modules/**/*"]
+}

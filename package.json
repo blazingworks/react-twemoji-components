@@ -1,0 +1,48 @@
+{
+  "name": "react-twemoji-components",
+  "version": "1.0.0-pre.0",
+  "description": "😃 Twemoji as individual React Components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blazingworks/react-twemoji-components.git"
+  },
+  "homepage": "https://blazing.works",
+  "author": "BlazingWorks <developers@blazing.works>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "emoji",
+    "twemoji",
+    "components",
+    "jsx",
+    "tsx",
+    "blazingworks"
+  ],
+  "packageManager": "pnpm@7.26.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "LICENSE-GRAPHICS",
+    "README.md",
+    ".github/blazingworks_opensource.svg"
+  ],
+  "scripts": {
+    "build:updateData": "./scripts/updateData.sh",
+    "build:updateEmoji": "./scripts/updateEmoji.sh",
+    "build:renameFiles": "node scripts/renameFiles.js",
+    "build:createComponents": "svgr --out-dir src --ignore-existing --typescript svg",
+    "build:final": "tsc",
+    "build": "npm run build:updateData && npm run build:updateEmoji && npm run build:renameFiles && npm run build:createComponents && npm run build:final"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.5.1",
+    "@types/react": "^18.0.28",
+    "csv-parse": "^5.3.5",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,0 +1,7 @@
+src
+dist
+node_modules
+temp
+.DS_Store
+svg
+data/emojis.csv

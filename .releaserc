@@ -9,7 +9,7 @@
       "prerelease": "pre"
     }
   ],
-  "repositoryUrl": "https://github.com/blazingworks/reggy.git",
+  "repositoryUrl": "https://github.com/blazingworks/react-twemoji-components.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",

@@ -34,7 +34,7 @@ pnpm add react-twemoji-components
 ```tsx
 import { TransgenderFlag } from "react-twemoji-components";
 
-return <TransgenderFlag size={64} />;
+return <TransgenderFlag />;
 ```
 
 ## Special Thanks & Sponsors

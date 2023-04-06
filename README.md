@@ -1,7 +1,8 @@
 # react-twemoji-components
 
 <div align="center">
-😃 Twemoji as individual React Components
+
+![😃 Twemoji as individual React Components](.github/assets/cover.png)
 
 ![License](https://img.shields.io/github/license/blazingworks/react-twemoji-components?color=%235300cf&labelColor=%230a0014&style=for-the-badge)
 ![Contributors](https://img.shields.io/github/contributors/blazingworks/react-twemoji-components?color=%235300cf&labelColor=%230a0014&style=for-the-badge)
@@ -15,18 +16,19 @@
 
 ## Current status (⚠️)
 
-`react-twemoji-components` is currently in development and is not suggested for production use. The following things are currently still unfinished or may change at any time:
+`react-twemoji-components` hasn't been battle-tested yet and is in pre-release state. However, due to the simple nature of the package, you should be able to use it in production if you can live with the limitations listed below.
 
 - The dataset we're using is currently stuck on Unicode 13.0. We're working on updating it to Unicode 14.0/15.0. You can still use these emojis, but their name will be their codepoint. These are however deprecated and may be removed in any future update.
 - Some emojis are missing from the dataset. These include for example the letters or digits.
 - The skin tone variants are currently executed as seperate components. These will be removed in the future and replaced with a single component which takes a `skinTone` prop.
+- The package currently still uses Twitter's Twemoji set. We're working on switching to the new fork by jdecked.
 
 ## Installation
 
 ```sh
-npm install react-twemoji-components
-yarn add react-twemoji-components
-pnpm add react-twemoji-components
+npm install react-twemoji-components@dev
+yarn add react-twemoji-components@dev
+pnpm add react-twemoji-components@dev
 ```
 
 ## Usage
@@ -55,5 +57,5 @@ return <TransgenderFlag />;
 `react-twemoji-components` is licensed under the [MIT License](/LICENSE).
 
 <div align="center" style="margin-top: 30px">
-<a href="https://blazing.works"><img src=".github/blazingworks_opensource.svg" alt="BlazingWorks Open-Sourcd" width="200px"></a>
+  <a href="https://blazing.works"><img src=".github/assets/bw_opensource.svg" alt="BlazingWorks Open-Sourcd" width="200px"></a>
 </div>
